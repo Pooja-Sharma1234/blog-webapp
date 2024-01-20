@@ -1,0 +1,151 @@
+*{
+  margin:0;
+  padding: 0;
+}
+body{
+  /* width: 100vw;
+  overflow:hidden; */
+}
+.main-nav{
+  width: 100%;
+  height: 5rem;
+  display: grid;
+  grid-template-columns: 4rem 1fr 2fr 1fr 4rem ;
+  box-shadow: 10px 10px;
+}
+
+a{
+  text-decoration: none;
+}
+li{
+  list-style: none;
+}
+.logo{
+  height: 5rem;
+  background-color: #f4f6f8;
+  grid-column: 2/3;
+  justify-content: start;
+  align-items: center;
+}
+.logo h2{
+  font-size: 2.5rem;
+  background: -webkit-linear-gradient(#eee,rgb(60,50,248));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.menu-link{
+  grid-column: 3/4;
+}
+.menu-link ul{
+  height: 5rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.menu-link ul li a{
+  
+  color:rgba(0, 0, 3, 0.8);
+  transition: 0.5s;
+
+
+}
+.menu-link ul li :hover{
+  
+  text-decoration: underline;
+
+}
+.d-flex{
+  display: flex;
+  grid-column: 4/5;
+  height: 5rem;
+  align-items: center;
+  margin-left:90px ;
+  
+  
+}
+.d-flex button{
+  background-color: rgb(98, 98, 111);
+  margin-left: 2px;
+
+  
+}
+/* .d-flex{
+  grid-column: 4/5;
+}
+
+.d-flex ul{
+ height: 5.5rem;
+  display:grid;
+  grid-template-columns: 3fr repeat(2,1fr);
+  align-items: center;
+  justify-content: flex-end;
+}
+.d-flex ul li {
+  text-align: right;
+}
+.d-flex ul li :first-child{
+  grid-column: 2/3;
+} */
+
+#hero{
+  background-color: rgb(169, 181, 177);
+  height: 90vh;
+  width: 100%;
+  background-size: cover;
+  background-position: top 25% right 0;
+  padding:0 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+#hero p{
+    color: rgb(13, 13, 14);
+    font-style: italic;
+}
+button{
+  margin-top: 10px;
+}
+.Container{
+  height: 50vh;
+  width: 100%;
+  background-color: blue;
+  
+}
+form{
+  box-sizing: border-box;
+ justify-content: center;
+ padding: 5% 40%;
+ margin: 8px 0;
+
+ 
+
+}
+form section{
+  position: absolute;
+  background-color: rgb(142, 142, 152);
+  
+
+
+}
+form section h2{
+  
+
+}
+
+form .login-items{
+
+  margin-left: 1px;
+}
+form div{
+  margin: 5% 40%;
+}
+form button{
+  margin-left: 100px;
+  background-color: rgb(158, 158, 181);
+  
+}
+
+
+
