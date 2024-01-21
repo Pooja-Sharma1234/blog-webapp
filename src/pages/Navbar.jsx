@@ -21,16 +21,18 @@ const Navbar = () => {
         <div className="menu-link">
           <ul>
             <li>
-              <a href="#">Home</a>
+            <Link  to={"/"}>Home</Link>
+   
             </li>
             <li>
-              <a href="#">About</a>
+            <Link  to={"/about"}>About</Link>
+   
             </li>
             <li>
-              <a href="#">Contact</a>
+              <Link  to={"/contact"}>Contact</Link>
             </li>
             <li>
-              <a href="#">Services</a>
+            <Link  to={"/services"}>Services</Link>
             </li>
           </ul>
         </div>
@@ -55,13 +57,14 @@ const Navbar = () => {
         </div> */}
 
         <div className="d-flex">
-          <button className="button" onClick={Registration}>
+          <Link  to={"/login"}>Login</Link>
+          {/* <button className="button" onClick={Registration}>
             Login
-          </button>
-
-          <button className="button" onClick={() => Navigate("/Registration")}>
+          </button> */}
+          <Link to={"/register"}>Signup</Link>
+          {/* <button className="button" onClick={() => Navigate("/Registration")}>
             Signup
-          </button>
+          </button> */}
         </div>
       </nav>
     </>
